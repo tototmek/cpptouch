@@ -1,13 +1,14 @@
 INSTALL_DIR = /usr/local/bin
-SCRIPT_NAME = cpptouch
+SCRIPT_NAME = cpptouch.py
+PROGRAM_NAME = cpptouch
 
 install:
-	@echo "Installing $(SCRIPT_NAME) to $(INSTALL_DIR)"
-	@cp $(SCRIPT_NAME) $(INSTALL_DIR)
-	@chmod +x $(INSTALL_DIR)/$(SCRIPT_NAME)
+	@echo "Installing $(PROGRAM_NAME) to $(INSTALL_DIR)"
+	@cp $(SCRIPT_NAME) $(INSTALL_DIR)/$(PROGRAM_NAME)
+	@chmod +x $(INSTALL_DIR)/$(PROGRAM_NAME)
 	@echo "Installation complete"
 
 clean:
-	@echo "Removing $(SCRIPT_NAME) from $(INSTALL_DIR)"
-	@rm -f $(INSTALL_DIR)/$(SCRIPT_NAME)
+	@echo "Removing $(PROGRAM_NAME) from $(INSTALL_DIR)"
+	@rm -f $(INSTALL_DIR)/$(PROGRAM_NAME)
 	@echo "Cleanup complete"
